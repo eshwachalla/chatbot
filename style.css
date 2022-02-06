@@ -1,0 +1,374 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  color: white;
+}
+
+.mainSection {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #e5e5e5;
+}
+
+.heroItem {
+  width: 416px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+
+.backgroundtop {
+  width: 100%;
+  flex: 1.2;
+  border-radius: 20px 20px 0 0;
+  background: linear-gradient(123.75deg, #F5821F 1.87%, #FF5C00 120.46%);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.backgroundbottom {
+  flex: 2;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0 0 20px 20px;
+}
+
+.topCard {
+  z-index: 1;
+  position: absolute;
+  width: 390px;
+  height: 380px;
+  background-color: white;
+  bottom: 20px;
+  left: 14px;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.topContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 40px;
+  flex: 1;
+  margin-top: -25px;
+  animation: fadeIn 0.6s ease-in;
+}
+
+
+.topContent h2 {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 39px;
+  margin-bottom: 5px;
+}
+.topContent h4 {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 39px;
+}
+
+.topContent p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23px;
+  margin-top: 5px;
+}
+
+.fabBtn {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -30px;
+  left: 20px;
+  cursor: pointer;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(123.75deg, #F5821F 1.87%, #FF5C00 120.46%);
+}
+
+.topCardContent {
+  padding: 20px;
+  margin-top: 20px;
+  /* animation: fadeIn;
+  animation-duration: 2s;
+  animation-delay: 0.8s; */
+}
+
+.topCardContent h4 {
+  color: #2d2d2d;
+}
+
+.topCardContent .cardBtn1 {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  color: #2d2d2d;
+  padding: 10px;
+  margin-top: 15px;
+  cursor: pointer;
+  font-size: 14px;
+  animation: fadeIn;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+}
+.topCardContent .cardBtn2 {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  color: #2d2d2d;
+  padding: 10px;
+  margin-top: 15px;
+  cursor: pointer;
+  font-size: 14px;
+  animation: fadeIn;
+  animation-duration: 2s;
+  animation-delay: 1.0s;
+}
+.topCardContent .cardBtn3 {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  color: #2d2d2d;
+  padding: 10px;
+  margin-top: 15px;
+  cursor: pointer;
+  font-size: 14px;
+  
+  animation: fadeIn;
+  animation-duration: 2s;
+  animation-delay: 1.5s;
+}
+.topCardContent .cardBtn4 {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  color: #2d2d2d;
+  padding: 10px;
+  margin-top: 15px;
+  cursor: pointer;
+  font-size: 14px;
+  animation: fadeIn;
+  animation-duration: 2s;
+  animation-delay: 2.0s;
+}
+.topCardContent .cardBtn.circle {
+  width: fit-content;
+  border-radius: 60px;
+  text-align: center;
+  margin-left: 60px;
+  padding: 10px;
+  cursor: pointer;
+  color: #2d2d2d;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  border: 1px solid #dddddd;
+  margin-top: 10px;
+  animation: fadeIn;
+  animation-duration: 2s;
+  animation-delay: 2.5s;
+}
+
+@media screen and (max-width: 768px) {
+  .heroItem {
+    width: 350px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
+    position: relative;
+  }
+  
+  .backgroundtop {
+    width: 100%;
+    flex: 1.2;
+    border-radius: 20px 20px 0 0;
+    background: linear-gradient(123.75deg, #F5821F 1.87%, #FF5C00 120.46%);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  
+  .backgroundbottom {
+    flex: 2;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0 0 20px 20px;
+  }
+  
+  .topCard {
+    z-index: 1;
+    position: absolute;
+    width: 320px;
+    height: 300px;
+    background-color: white;
+    bottom: 20px;
+    left: 14px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+
+  .fabBtn {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -25px;
+    left: 20px;
+    cursor: pointer;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(123.75deg, #F5821F 1.87%, #FF5C00 120.46%);
+  }
+
+  .fabBtn svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .topCardContent .cardBtn {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    color: #2d2d2d;
+    padding: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .topCardContent .cardBtn.circle {
+    width: fit-content;
+    border-radius: 40px;
+    text-align: center;
+    margin-left: 35px;
+    padding: 8px;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .heroItem {
+    width: 300px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
+    position: relative;
+  }
+  
+  .backgroundtop {
+    width: 100%;
+    flex: 1.2;
+    border-radius: 20px 20px 0 0;
+    background: linear-gradient(123.75deg, #F5821F 1.87%, #FF5C00 120.46%);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  
+  .backgroundbottom {
+    flex: 2;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0 0 20px 20px;
+  }
+  
+  .topCard {
+    z-index: 1;
+    position: absolute;
+    width: 270px;
+    height: 300px;
+    background-color: white;
+    bottom: 20px;
+    left: 14px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+
+  .fabBtn {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -25px;
+    left: 20px;
+    cursor: pointer;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(123.75deg, #F5821F 1.87%, #FF5C00 120.46%);
+  }
+
+  .fabBtn svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .topCardContent .cardBtn {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    color: #2d2d2d;
+    padding: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .topCardContent .cardBtn.circle {
+    width: fit-content;
+    border-radius: 40px;
+    text-align: center;
+    margin-left: 20px;
+    padding: 8px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+}
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+  
+}
+.topContent:nth-child(1) {
+	
+}
+.topContent:nth-child(2) {
+	animation-delay: 1.0s;
+}
+.topContent:nth-child(3) {
+	animation-delay: 1.5s;
+}
+
+@keyframes fadeInC {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
